@@ -1,10 +1,13 @@
 const express = require('express');
+const routes = require('./routes');
 
 const app = express();
 
 app.get('/', (req, res) => {
   res.status(200).json({ data: 'Welcome to the home endpoint' });
 });
+
+app.use('/api/v1', routes);
 
 const port = process.env.PORT || 3000;
 
