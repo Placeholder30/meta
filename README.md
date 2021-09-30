@@ -1,6 +1,6 @@
 # metacare APIs
 
-APIs manipulating starwars
+API manipulating starwars API
 
 ## Instructions to run the app locally
 
@@ -40,8 +40,8 @@ clone the repo
   GET /api/v1/characters
 ```
 
-| Parameter | Type     | Description                                                                                                                             |
-| :-------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
-| `sort_by` | `string` | **Optional**. You can specify how to sort the characters you can sort by one of **name**, **height** and **gender**. eg: `sort_by=name` |
-| `dsc`     | `string` | **Optional**. items are returned by default in ascending order, pass `dsc=true `to return them in descending order                      |
-| `filter`  | `string` | **Optional**. You can specify to filter the characters by gender, eg: `filter=male`                                                     |
+| Parameter | Type     | Description                                                                                                                              |
+| :-------- | :------- | :--------------------------------------------------------------------------------------------------------------------------------------- |
+| `sort_by` | `string` | **Optional**. You can specify how to sort the characters, you can sort by one of **name**, **height** and **gender**. eg: `sort_by=name` |
+| `dsc`     | `string` | **Optional**. items are returned by default in ascending order, pass `dsc=true `to return them in descending order                       |
+| `filter`  | `string` | **Optional**. You can specify to filter the characters by gender, eg: `filter=male`                                                      |

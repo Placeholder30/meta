@@ -27,7 +27,9 @@ module.exports = async (req, res) => {
       } else {
         sortedData = data.sort((a, b) => b.height - a.height);
       }
-      return res.status(200).json({ data: sortedData });
+      return res
+        .status(200)
+        .json({ data: [{ count: sortedData.length }, ...sortedData] });
     }
 
     if (sort_by === 'gender') {
@@ -38,7 +40,9 @@ module.exports = async (req, res) => {
       } else {
         sortedData = data.sort((a, b) => b.gender - a.gender);
       }
-      return res.status(200).json({ data: sortedData });
+      return res
+        .status(200)
+        .json({ data: [{ count: sortedData.length }, ...sortedData] });
     }
     if (sort_by === 'name') {
       let sortedData;
@@ -47,7 +51,9 @@ module.exports = async (req, res) => {
       } else {
         sortedData = data.sort((a, b) => b.name - a.name);
       }
-      return res.status(200).json({ data: sortedData });
+      return res
+        .status(200)
+        .json({ data: [{ count: sortedData.length }, ...sortedData] });
     }
     res.status(400).json({ message: 'please enter a valid sort parameter' });
   } catch (error) {
