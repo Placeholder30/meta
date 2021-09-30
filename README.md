@@ -2,6 +2,8 @@
 
 API manipulating starwars API
 
+BASE_URL : https://metacare-app.herokuapp.com
+
 ## Instructions to run the app locally
 
 clone the repo
@@ -14,19 +16,19 @@ clone the repo
 #### Get all movies
 
 ```http
-  GET /api/v1/movies
+  GET {BASE_URL}/api/v1/movies
 ```
 
 #### Get all comments
 
 ```http
-  GET /api/v1/comments
+  GET {BASE_URL}/api/v1/comments
 ```
 
 #### Post a comment
 
 ```http
-  POST /api/v1/comments
+  POST {BASE_URL}/api/v1/comments
 ```
 
 | Request data | Type     | Description                                                      |
@@ -37,7 +39,7 @@ clone the repo
 #### Get Characters
 
 ```http
-  GET /api/v1/characters
+  GET {BASE_URL}/api/v1/characters
 ```
 
 | Parameter | Type     | Description                                                                                                                              |
